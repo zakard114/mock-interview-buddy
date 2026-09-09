@@ -21,7 +21,7 @@ export function readStoredParticipant(sessionId: string): Participant | null {
   }
 }
 
-function storeParticipant(participant: Participant) {
+export function storeParticipant(participant: Participant) {
   try {
     globalThis.localStorage?.setItem(
       meKey(participant.sessionId),
