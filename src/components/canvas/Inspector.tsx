@@ -90,7 +90,7 @@ export function Inspector({ selected, participants, onUpdate, onDelete }: Props)
                 }}
               />
               <span className="truncate">{participant.displayName}</span>
-              <span className="mono-tag ml-auto">{participant.role.slice(0, 4)}</span>
+              <span className="mono-tag ml-auto">{participant.role}</span>
             </li>
           ))}
         </ul>
